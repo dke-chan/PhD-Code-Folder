@@ -1,2 +1,2 @@
 # PhD-Code-Folder
-A repository for any R, bash or C++ code used in the exploration, analysis and output of my PhD thesis. Link TBA.
+Any R, bash or C++ code used in my PhD thesis's data exploration, analyses, and output is found here.
