@@ -13,7 +13,7 @@ ascr.results <- cbind(
   lwr.Wald = confint(benchmark.fit, linked = TRUE)[, 1],
   upr.Wald = confint(benchmark.fit, linked = TRUE)[, 2]
   ) |>
-  rbind(c(mean(benchmark.derived[grep("esa", names(benchmark.derived))]) / 100, NA, NA, NA, NA))
+  rbind(c(mean(get.par(benchmark.fit, "esa")) / 100, NA, NA, NA, NA))
 rownames(ascr.results)[5] <- "esa_bar"
 ascr.results[1, c(1, 2, 4, 5)] <- 100 * ascr.results[1, c(1, 2, 4, 5)] / 3
 
